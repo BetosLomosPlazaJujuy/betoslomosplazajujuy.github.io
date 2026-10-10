@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mesa Clara · Carta digital</title>
+<meta name="description" content="Una carta digital de ejemplo: cafés, algo rico y bebidas. Productos y precios ficticios.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23692235'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia' font-size='42' fill='white'%3Em%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo">EJEMPLO INTERACTIVO · Productos y precios ficticios</div>
+<header><a class="wordmark" href="#">mesa clara<span>CAFÉ & BUENAS PAUSAS</span></a><a class="qr-link" href="#qr">Ver QR</a></header>
+<main>
+<section class="intro"><p class="eyebrow">LA CARTA</p><h1>Tu próxima<br><em>buena pausa.</em></h1><p>Café, algo rico y un momento para vos.</p></section>
+<nav aria-label="Categorías de la carta"><a href="#cafes">01 · Cafés</a><a href="#algo-rico">02 · Algo rico</a><a href="#bebidas">03 · Bebidas</a></nav>
+<div class="layout"><div class="menu">
+<p class="currency">Precios de ejemplo en pesos argentinos (ARS).</p>
+<section id="cafes" class="category"><div class="section-title"><h2>Cafés</h2><span>01</span></div>
+<article><div><h3>Espresso</h3><p>Una pausa corta, un café intenso. Taza de 40 ml.</p></div><strong>$ 2.500</strong></article>
+<article><div><h3>Café con leche <span class="tag">Favorito</span></h3><p>El clásico de todos los días. Taza de 240 ml.</p></div><strong>$ 3.400</strong></article>
+<article><div><h3>Cappuccino</h3><p>Café con leche y espuma. Taza de 200 ml.</p></div><strong>$ 3.800</strong></article>
+</section>
+<section id="algo-rico" class="category"><div class="section-title"><h2>Algo rico</h2><span>02</span></div>
+<article><div><h3>Medialunas</h3><p>Dos unidades para acompañar tu café.</p></div><strong>$ 2.800</strong></article>
+<article><div><h3>Tostado clásico</h3><p>Jamón y queso en pan de molde. Una unidad.</p></div><strong>$ 5.200</strong></article>
+<article><div><h3>Budín de limón</h3><p>Una porción para una tarde tranquila.</p><span class="unavailable">No disponible en este ejemplo</span></div><strong>$ 3.200</strong></article>
+</section>
+<section id="bebidas" class="category"><div class="section-title"><h2>Bebidas</h2><span>03</span></div>
+<article><div><h3>Limonada</h3><p>Fresca y cítrica. Vaso de 350 ml.</p></div><strong>$ 3.500</strong></article>
+<article><div><h3>Jugo de naranja</h3><p>Vaso de 300 ml.</p></div><strong>$ 3.800</strong></article>
+<article><div><h3>Agua mineral</h3><p>Con o sin gas. Botella de 500 ml.</p></div><strong>$ 2.200</strong></article>
+</section>
+</div><aside><img class="coffee-photo" src="coffee.jpg" alt="Un espresso en taza blanca sobre una mesa oscura" width="900" height="600"><p class="photo-credit">Foto ilustrativa: <a href="https://unsplash.com/photos/white-ceramic-cup-with-brown-liquid-dAYJfrtVjh0">Nathan Dumlao / Unsplash</a></p>
+<section class="qr-card" id="qr"><p class="eyebrow">LA CARTA, EN TU CELULAR</p><h2>Escaneá.<br>Elegí. Disfrutá.</h2><div id="qr-image"><noscript>Activá JavaScript para ver el QR.</noscript></div><p>Apuntá la cámara al código para abrir esta misma carta.</p><a class="download" id="download-qr" hidden download="mesa-clara-qr.png">Descargar QR</a><p class="small" id="access-note">Acceso público, sin iniciar sesión.</p></section>
+<p class="aside-note">Esta es una demostración. No se toman pedidos ni se realizan cobros.</p>
+</aside></div>
+</main><footer><span class="footer-brand">mesa clara</span><span>Una carta de ejemplo, lista para explorar.</span></footer>
+<script src="qrcode.js"></script><script src="menu-qr.js"></script></body></html>
